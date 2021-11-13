@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.navigation{
+
+    background-color:  rgb(250, 202, 250);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.game-container{
+    
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+
+}
+
+.content-left{
+
+display: grid;
+grid-template-columns: repeat(3, 10vw);
+grid-template-rows: repeat(3,10vw);
+font-size: 20px;
+font-family: 'Roboto', sans-serif;
+
+
+}
+
+.box{
+    border: 1px solid black;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box:hover{
+    background-color: rgb(250, 203, 250);
+}
+
+.content-right{
+    padding: 55px;
+}
+
+.img img {
+
+    height: 0px;
+    width: 0px;
+    margin-top: 20px;
+
+}
+
+.welcome-text{
+
+font-size: 25px;
+font-family: 'Roboto', sans-serif;
+
+}
+
+.game-nav{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#reset{
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    width: 80px;
+    background-color:  rgb(250, 202, 250);
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset:hover{
+    box-shadow: 5px 5px #d3d3d3;
+}
+
+.info{
+
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.right-border{
+    border-right: 0;
+}
+
+.left-border{
+    border-left: 0;
+}
+
+.top-border{
+    border-top: 0;
+}
+
+.bottom-border{
+    border-bottom: 0;
+}
+
+/* Responsive styling */
+
+@media screen and (max-width: 800px){
+
+    .game-container{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+
+    .content-left{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .welcome-text{
+        font-size: 18px;
+    }
+    .content-right{
+        padding-top: 0px;
+        margin: auto;
+    }
+
+    
+
+
+}
+
+@media screen and (max-width : 500px){
+
+    
+
+    .content-right{
+        padding-left: 20px;
+    }
+
+    .content-left{
+        margin: auto;
+        margin-bottom: 30px;
+            grid-template-columns: repeat(3, 20vw);
+            grid-template-rows: repeat(3,20vw);
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+    }
+}
+
+
+
+
+
+
+
+
